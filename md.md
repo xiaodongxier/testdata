@@ -22,14 +22,84 @@
 
 ## 代码
 
+```html
+<template>
+  <div class="hello">
+   <VueMarkdown :source="md"/>
+   {{ aaaaa }}
+  </div>
+</template>
 ```
-代码1
-代码2
+
+
+```css
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+```
+
+
+```js
+import VueMarkdown from "vue-markdown";
+export default {
+  name: 'HelloWorld',
+  components: {
+    VueMarkdown
+  },
+  data(){
+    return {
+      md: "# aaa",
+      aaaaa: ''
+    }
+  },
+}
+```
+
+
+```json
+{
+  "name": "hexo-theme-fluid",
+  "version": "1.9.5",
+  "description": "An elegant Material-Design theme for Hexo.",
+  "main": "package.json",
+  "files": [
+    "languages",
+    "layout",
+    "scripts",
+    "source",
+    "_config.yml"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluid-dev/hexo-theme-fluid.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "fluid",
+    "material"
+  ],
+  "author": "Fluid-dev (https://github.com/fluid-dev)",
+  "license": "GPL-V3",
+  "bugs": {
+    "url": "https://github.com/fluid-dev/hexo-theme-fluid/issues"
+  },
+  "homepage": "https://hexo.fluid-dev.com/docs",
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "peerDependencies": {
+    "nunjucks": "^3.0.0"
+  }
+}
 ```
 
 ## 图片
 
-![图片1](https://github.com/guodong4/guodong4.github.io/raw/master/images/1.jpg)
+![图片1](https://gitcdn.xiaodongxier.com/obsidian/202311251728486.webp)
 
 ## 链接
 
